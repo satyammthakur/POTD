@@ -3,6 +3,7 @@ Sudoku Solver LC-37 , LC-Hard
 Link: https://leetcode.com/submissions/detail/1754831905/
 Prerequisties- LC 36
 
+Question - find a answer for the sudoku given
 Concept - Recursion, Backtracking , HashMap
 
 Backtracking - Do->Explore->Undo
@@ -25,6 +26,9 @@ for writing valid function we checked row,col
 first checked col then row. 
 
 for 3*3 subgrid, we used the concept startRow,startCol woh dekh lo.
+
+
+Time complexity - O(1), Space Complexity- O(1). constant cause 9*9 only at max
 */
 
 #include<bits/stdc++.h>
