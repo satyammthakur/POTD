@@ -1,25 +1,24 @@
 /*
-Find the Number of Ways to Place People I  LC-3025 , LC-Medium
-Link: https://leetcode.com/submissions/detail/1755461723/
-Prerequisties- nothing as such
+Find the Number of Ways to Place People II  LC-3027 , LC-Hard
+Link: https://leetcode.com/submissions/detail/
+Prerequisties- 3025 
 
 Question- You are given a 2D array points of size n x 2 representing integer coordinates of some points on a 
 2D plane, where points[i] = [xi, yi]. Count the number of pairs of points (A, B), where
 A is on the upper left side of B, and
 there are no other points in the rectangle (or line) they make (including the border).
-Return the count.
+Return the count. 
+[same as before ques, just used some story to conclude the question]
 
-Concept - brute as constraints were too low
-Approach- solved by my own , brute wrote 
+Concept - can't use brute here as constraints are enough.
+
+Approach- used the yesterday's brute approach to optimise it, using sorting we will further reduce the solution
 
 first pick one point and then find the point which is in upper left of that point, when u get the point we will
 check for all the point except for i and j, whether any point lie on that rectangular region made by these two 
 points or not if we couldn't find anything then we will just increase our cnt else we will just move away
 
 TC - o(n cube) at worst case 
-
-
-other approach could be using sorting as it will reduce the complexity to O(n square).
 Solution- 
 */
 
@@ -28,7 +27,6 @@ using namespace std;
 
 class Solution {
 public:
-    // approach 1
     bool check(int x1, int y1, int x2, int y2) { return x1 >= x2 && y1 <= y2; }
     bool check1(int x1, int y1, int x2, int y2, int x3, int y3) {
         return (min(x1, x2) <= x3 && x3 <= max(x1, x2) && min(y1, y2) <= y3 && y3 <= max(y1, y2));
@@ -61,7 +59,7 @@ public:
         return cnt;
     }
 
-    // approach 2
+    // approach 2(used in this ques)
     int numberOfPairs(vector<vector<int>>& points) {
         int n = points.size();
 
@@ -101,5 +99,4 @@ public:
 
         return result;
     }
-
 };
