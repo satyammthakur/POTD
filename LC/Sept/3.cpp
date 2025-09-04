@@ -1,6 +1,6 @@
 /*
 Find the Number of Ways to Place People II  LC-3027 , LC-Hard
-Link: https://leetcode.com/submissions/detail/
+Link: https://leetcode.com/submissions/detail/1758631606/
 Prerequisties- 3025 
 
 Question- You are given a 2D array points of size n x 2 representing integer coordinates of some points on a 
