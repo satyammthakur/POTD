@@ -1,6 +1,6 @@
 /*
 Minimum Operations to Make Array Elements Zero  LC-3495 , LC-hard   
-Link: https://leetcode.com/submissions/detail/
+Link: https://leetcode.com/submissions/detail/1761685496
 Prerequisties- nothing
 
 Question- You are given a 2D array queries, where queries[i] is of the form [l, r]. Each queries[i] 
